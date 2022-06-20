@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.top {
+    width: 100%;
+    height: 100vh;
+    background-image: url("sc.png");
+    /* background-color: black; */
+    box-shadow: 5px 10px #888888;
+}
+
+.menu {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu:hover {
+    background-color: blueviolet;
+}
+
+.menu .item {
+    display: flex;
+    position: fixed;
+    /* align-items: center;
+    justify-content: flex-end; */
+    list-style: none;
+    margin-right: 60px;
+}
+
+.item li {
+    padding: 20px;
+    text-decoration: none;
+}
+
+.item a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: bold;
+    color: aliceblue;
+}
+
+.name {
+    height: 250px;
+    width: 90%;
+    margin-top: 200px;
+    margin-left: 30px;
+}
+
+.text {
+    margin-top: 20px;
+    display: inline-flex;
+}
+
+.mayur {
+    /* margin-top: 20px; */
+    margin-right: 20px;
+    font-size: 60px;
+    color: white;
+}
+
+.hello {
+    /* /* margin-left: -364px; */
+    /* margin-top: 40px; */
+    /* margin-right: 20px; */
+    font-size: 30px;
+    color: white;
+}
+
+.im {
+    margin-left: -364px;
+    margin-top: 82px;
+    margin-right: 20px;
+    font-size: 60px;
+    color: white;
+}
+
+.dayn {
+    margin-top: 75px;
+    list-style: none;
+    height: 90px;
+    line-height: 90px;
+    position: relative;
+    overflow: hidden;
+}
+
+.center {
+    height: 600px;
+    width: 100%;
+}
+
+.dayn li {
+    color: orange;
+    font-size: 60px;
+    font-weight: 500;
+    top: 0;
+    position: relative;
+    animation: slide 16s steps(4) infinite;
+}
+
+@keyframes slide {
+    100% {
+        top: -360px;
+    }
+}
+
+.dayn li span:after {
+    content: '';
+    left: 0;
+    border-left: 10px solid rgb(1, 1, 1);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    animation: type 4s steps(13) infinite;
+}
+
+@keyframes type {
+    40%,
+    60% {
+        left: calc(100% + 30px);
+    }
+    100% {
+        left: 0;
+    }
+}
+
+.dis {
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    color: white;
+}
